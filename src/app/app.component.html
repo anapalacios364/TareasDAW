@@ -1,0 +1,30 @@
+
+
+<main class="main">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Tarea Angular</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Investigue servicios que ofrezcan
+          información, y cree la interfaz y
+          servicio para agregar la información a
+          su proyecto usando los componentes
+          que crea necesario</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        @for (foto of fotos; track foto.id){
+        <div class="col">
+          <div class="card">
+            <img src="{{foto.url}}" class="card-img-top" alt="{{foto.id}}">
+            <div class="card-body">
+              <h5 class="card-title">{{foto.title}}</h5>
+              <p class="card-text">{{foto.thumbnailUrl}}</p>
+            </div>
+          </div>
+        </div>
+      }
+      </div>
+    </div>
+  </section>
+</main>

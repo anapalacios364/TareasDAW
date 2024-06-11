@@ -1,0 +1,13 @@
+<footer class="footer">
+    <ul class="social-media">
+      <li *ngFor="let medio of medios">
+        <a href="medio.red">
+          <img [src]="medio.imagen" alt="{{ medio.texto }}" />
+          {{ medio.texto }}
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      &copy; VERIS SA 2024
+    </div>
+  </footer>

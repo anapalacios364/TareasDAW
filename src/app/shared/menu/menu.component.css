@@ -1,0 +1,28 @@
+.menu {
+    background-color: #343a40;
+    padding: 10px;
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-items li {
+    display: inline;
+  }
+  
+  .menu-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu-items a:hover {
+    text-decoration: underline;
+  }
+  
